@@ -25,7 +25,7 @@ const Home = () => {
   if (status) {
     if (posts.length > 0) {
       return <Container>
-        <div className="grid sm:grid-cols-2 grid-cols-2  grid-rows-2 gap-5">
+        <div className="grid sm:grid-cols-2 grid-cols-1  grid-rows-2 gap-5">
           {
             posts.map((post) => (
               <PostCard key={post.$id} {...post} />
